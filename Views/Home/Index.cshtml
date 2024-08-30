@@ -2,6 +2,86 @@
     ViewData["Title"] = "Carpool";
 }
 
-<div class="text-center">
-    <h1>Welcome</h1>
-</div>
+
+<main id="index-main">
+    <div class="row">
+        <div class="container col-4" id="box-caronas">
+            <form id="form-caronas">
+                <span class="mb-2">Inserção de caronas</span>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Data</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Valor</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-light">Adicionar Carona</button>
+                </div>
+            </form>
+
+            <form class="mt-2 mb-4" id="form-abs-grande">
+                <span class="mb-2">Abastecimentos grandes - R$100+</span>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Data</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Valor</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-warning">Adicionar Abs. Alto</button>
+                </div>
+            </form>
+
+            <form class="mt-2 mb-4" id="form-abs-diario">
+                <span class="mb-2">Abastecimentos diários - R$100-</span>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Data</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label">Valor</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-info">Adicionar Abs. Diário</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container col-8" id="container-2">
+            <div class="row">
+                <div class="col-6" id="lista-caronas">
+                    para cada carona x mostrar data e valor
+                </div>
+                <div class="col-6" id="controle-orcamento">
+                    <p>valor total gasto</p>
+
+                    <p>valor total ganho</p>
+
+                    <p>orçamento (<span class="text-success">verde = positivo</span> <span class="text-danger">vermelho = negativo</span>)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
