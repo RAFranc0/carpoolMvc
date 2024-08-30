@@ -10,8 +10,9 @@ namespace carpoolmvc.Data
     {
         public carpoolMvcDb(DbContextOptions<carpoolMvcDb> options)
             : base(options) { }
-
-        //public DbSet<classe> Usuarios { get; set; }
+            
+        public DbSet<Caronas> Caronas {get; set;}
+        public DbSet<Orçamento> Orçamento {get; set;} 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
